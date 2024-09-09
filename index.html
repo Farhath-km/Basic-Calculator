@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Basic Calculator</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container d-flex justify-content-center align-items-center  vh-100">
+    <div class="calculator card shadow p-4">
+      <input type="text" id="result" class="form-control text-end mb-3" readonly>
+      <div class="row g-2 mb-2">
+        <button onclick="clearCalcScreen()" class="btn btn-secondary col">AC</button>
+        <button onclick="removeLastItem()" class="btn btn-danger col">C</button>
+        <button onclick="displayAll('/')" class="btn btn-light col">/</button>
+        <button onclick="displayAll('*')" class="btn btn-light col">X</button>
+      </div>
+      <div class="row g-2 mb-2">
+        <button onclick="displayAll('7')" class="btn btn-light col">7</button>
+        <button onclick="displayAll('8')" class="btn btn-light col">8</button>
+        <button onclick="displayAll('9')" class="btn btn-light col">9</button>
+        <button onclick="displayAll('-')" class="btn btn-light col">-</button>
+      </div>
+      <div class="row g-2 mb-2">
+        <button onclick="displayAll('4')" class="btn btn-light col">4</button>
+        <button onclick="displayAll('5')" class="btn btn-light col">5</button>
+        <button onclick="displayAll('6')" class="btn btn-light col">6</button>
+        <button onclick="displayAll('+')" class="btn btn-light col">+</button>
+      </div>
+      <div class="row g-2 mb-2">
+        <button onclick="displayAll('1')" class="btn btn-light col">1</button>
+        <button onclick="displayAll('2')" class="btn btn-light col">2</button>
+        <button onclick="displayAll('3')" class="btn btn-light col">3</button>
+        <button onclick="evaluateExp()" class="btn btn-primary col">=</button>
+      </div>
+      <div class="row g-2">
+        <button onclick="displayAll('0')" class="btn btn-light col-6">0</button>
+        <button onclick="displayAll('.')" class="btn btn-light col">.</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
