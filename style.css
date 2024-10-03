@@ -1,20 +1,11 @@
 body {
-    background-color: #1e1e1e; /* Dark background */
+    background-color: #000; /* Dark background */
   }
   
   .calculator {
     width: 320px;
     border-radius: 15px;
     background-color: #f8f9fa; /* Light background for the calculator card */
-  }
-  
-  #display {
-    height: 50px;
-    font-size: 1.5rem;
-    border-radius: 10px;
-    background-color: #fff; /* Light background for display */
-    color: #000; /* Black text for display */
-    border: none;
   }
   
   button {
@@ -26,13 +17,6 @@ body {
     color: #000; /* Dark button text */
   }
   
-  button:hover {
-    transform: scale(1.05);
-  }
-  
-  button:active {
-    transform: scale(0.98);
-  }
   #result {
     height: 70px; /* Increase height */
     font-size: 2rem; /* Increase font size */
@@ -48,11 +32,6 @@ body {
     background-color: #e0e0e0; /* Light grey buttons */
   }
   
-  .btn-warning {
-    background-color: #ffcc00; /* Yellow for = button */
-    color: #000;
-  }
-  
   .btn-danger {
     background-color: #ff5e5e; /* Red for C button */
   }
@@ -62,6 +41,6 @@ body {
   }
   
   .row.g-2 {
-    gap: 5px; /* Spacing between buttons */
+    gap: 8px; /* Spacing between buttons */
   }
   

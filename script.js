@@ -1,12 +1,13 @@
-const displayAll=(content)=>{
-    result.value+= content
+function displayAll(content)
+{
+    result.value += content;
 }
 
-const clearCalcScreen =()=>
+function clearCalcScreen()
     {
         result.value = ""
     }
-const evaluateExp = ()=>
+function evaluateExp()
     {
          try{
               result.value = eval(result.value)
@@ -16,7 +17,7 @@ const evaluateExp = ()=>
             }
     }
 
-const removeLastItem = ()=>
+function removeLastItem()
     {
          result.value=result.value.slice(0,-1)
      }
